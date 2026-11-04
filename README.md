@@ -27,7 +27,21 @@ Findings:
 - Members spend about 3% more per visit (327.79 vs. 318.12). The gap is small and still needs a significance test (Level 4).
 - Ratings are similar everywhere (about 6.8–7.1). Home and lifestyle and Mandalay are the lowest.
 
-**Next:** Level 3, time trends and charts
+**Level 3: Time trends and charts (done)**
+- Daily revenue line chart with a 7-day rolling average
+- Revenue by hour and weekday as bar charts, including revenue per day to correct for unequal day counts
+- Pivot tables: gender × product line and month × branch, with month-over-month growth
+- Weekday × hour revenue heatmap
+
+Findings:
+- **Revenue is flat across Q1.** Daily revenue is noisy, and the 7-day average shows no growth, with a dip in late February and a recovery in early March.
+- **Correcting for day counts changes the picture.** Monday and Sunday occur 12 times in the period and the other weekdays 13 times. Per day, Sunday moves from 4th to 3rd, and Monday is still the weakest day.
+- **Hour 14 has few sales (83) but the highest average sale of any hour (371).**
+- **Men drive Health and beauty revenue** (30.6k vs. 18.6k for women), against the usual expectation. Women lead Food and beverages (33.2k vs. 23.0k).
+- **Branch B did not dip in February.** In raw totals all branches fell from January to February, but per day Branch B grew 2.5%; only A (−14.5%) and C (−9.8%) really dipped. B was also the only branch that fell per day in March.
+- **The 7 PM peak is mainly Tuesday and Saturday** (about 9.2k and 9.1k). On Monday, 7 PM is one of the quietest slots. The quietest slot overall is Friday 5 PM.
+
+**Next:** Level 4, statistical tests and SQL
 
 ## Run it
 
